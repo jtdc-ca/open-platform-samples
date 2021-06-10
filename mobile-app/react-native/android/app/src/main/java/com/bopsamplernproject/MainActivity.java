@@ -1,4 +1,4 @@
-package com.bopsamplernproject;
+package com.toxontech.sampleapp;
 
 import com.facebook.react.ReactActivity;
 

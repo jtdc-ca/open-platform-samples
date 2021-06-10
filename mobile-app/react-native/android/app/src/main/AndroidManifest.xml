@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.bopsamplernproject">
+  package="com.toxontech.sampleapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -19,6 +19,15 @@
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data
+                android:host="bowdometer.us.auth0.com"
+                android:pathPrefix="/android/${applicationId}/callback"
+                android:scheme="${applicationId}" />
         </intent-filter>
       </activity>
     </application>
